@@ -33,6 +33,7 @@ namespace CoreWindowSharp
             wc.style = (int)(ClassStyles.HorizontalRedraw | ClassStyles.VerticalRedraw);
             wc.lpfnWndProc = Marshal.GetFunctionPointerForDelegate((WndProc)((hWnd, message, wParam, lParam) =>
             {
+                if (message == (uint)WM.CLOSE) Environment.Exit(0);
                 return DefWindowProc(hWnd, message, wParam, lParam);
             }));
             wc.lpszClassName = CLASS_NAME;

@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <Reference Include="Windows.UI.Xaml.Hosting">
-      <HintPath>..\..\..\Git\hwnd-xamlpresenter-notepad\WinMD\Windows.UI.Xaml.Hosting.winmd</HintPath>
+      <HintPath>..\Windows.UI.Xaml.Hosting.winmd</HintPath>
       <IsWinMDFile>true</IsWinMDFile>
     </Reference>
   </ItemGroup>
